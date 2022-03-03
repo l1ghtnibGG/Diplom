@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARDEST</title>
+    <script src = "JS/abon.js"></script>
+    <link rel="stylesheet" href="CSS/abon.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <header id = "Header">
+    <nav>
+        <a href = "main_page.html" id = "one">HARDEST</a>
+        <button id = "menu" onclick="fun_menu(this.id)">...</button>
+            <ul id = "Menu">
+                <li><a href = "motivation.html" class = "flex-itm">Мотивация</a></li>
+                <li><a href = "abon.html" class = "flex-itm" id = "point">Абонементы</a></li>
+                <li><a href = "trainers.html" class = "flex-itm">Тренера</a></li>
+                <li><a href = "aboutComp.html" class = "flex-itm">О компании</a></li>
+                <li><a href = "kontact.html" class = "flex-itm">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main>
+        <div class = "bg_main"><h1>Абонементы</h1></div>
+        <div class="row">
+            <div class="fitness">
+            <hr>
+            <h2>Фитнес зал</h2>
+            <p>КРОССФИТ АБОНЕМЕНТЫ</p>
+            <hr>
+            </div>
+            <div class = "hide_fit" id = "hide_fitness">
+            <div class="fitness_price" id = "priceX1">
+                <h3>1Х на 1 месяц</h3>
+                <p>10р</p>
+            </div>
+            <div class="fitness_price" id = "priceX4">
+                <h3>4Х на 1 месяц</h3>
+                <p>35р</p>
+            </div>
+            <div class="fitness_price" id = "priceX8">
+                <h3>8Х на 1 месяц</h3>
+                <p>45р</p>
+            </div>
+            <div class="fitness_price" id = "priceX12">
+                <h3>12Х на 1 меcяц</h3>
+                <p>65р</p>
+            </div>
+            <div class="fitness_price" id = "priceUnlim">
+                <h3>Безлимит на 1 меcяц</h3>
+                <p>85р</p>
+            </div>
+            </div>
+            <button id = "fit" onclick="fun_fitness(this.id)">Посмотреть предложения</button>
+
+            <div class="gym">
+            <hr>
+            <h2>Тренажёрный зал</h2>
+            <p>АБОНЕМЕНТЫ В ЗАЛ ТЯЖЁЛОЙ АТЛЕТИКИ</p>
+            <hr>
+            </div>
+            <div class = "hide_gym" id = "hide_GYM">
+            <div class="gym_price" id = "priceGymX1">
+                <h3>1Х на 1 месяц</h3>
+                <p>10р</p>
+            </div>
+            <div class="gym_price" id = "priceGymX4">
+                <h3>4Х на 1 месяц</h3>
+                <p>30р</p>
+            </div>
+            <div class="gym_price" id = "priceGymX8">
+                <h3>8Х на 1 месяц</h3>
+                <p>40р</p>
+            </div>
+            <div class="gym_price" id = "priceGymX12">
+                <h3>12Х на 1 меcяц</h3>
+                <p>60р</p>
+            </div>
+            <div class="gym_price" id = "priceGymUnlim">
+                <h3>Безлимит на 1 меcяц</h3>
+                <p>80р</p>
+            </div>
+            </div>
+            <button id = "gym" onclick="fun_gym(this.id)">Посмотреть предложения</button>
+
+        <div class="speshal">
+            <hr>
+            <h2>Спец предложения</h2>
+            <p>ПРЕДЛОЖЕНИЯ ТОЛЬКО ДЛЯ ЗАЛА ТЯЖЁЛОЙ АТЛЕТИКИ</p>
+            <hr>
+            </div>
+            <div class = "hide_speshal" id = "hide_Speshal">
+            <div class="speshal_price" id = "priceSpeshalX3month">
+                <h3>36X на 3 месяц</h3>
+                <p>150р</p>
+            </div>
+            <div class="speshal_price" id = "priceSpeshalX6month">
+                <h3>72X на 6 месяц</h3>
+                <p>260р</p>
+            </div>
+            <div class="speshal_price" id = "priceSpeshalX12month">
+                <h3>144X на 12 месяц</h3>
+                <p>450р</p>
+            </div>
+            </div>
+            <button id = "speshal" onclick="fun_speshal(this.id)">Посмотреть предложения</button>
+
+            <div class="student">
+                <hr>
+                <h2>Студенческий</h2>
+                <p>СКИДКА ПРИ ПРЕДЪЯВЛЕНИИ СТУДЕНЧЕСКОГО</p>
+                <hr>
+                </div>
+                <div class = "hide_student" id = "hide_Student">
+                <div class="student_price" id = "priceGymStudentX4">
+                    <h3>4Х на 1 месяц</h3>
+                    <p>20р</p>
+                </div>
+                <div class="student_price" id = "priceGymStudentX8">
+                    <h3>8Х на 1 месяц</h3>
+                    <p>30р</p>
+                </div>
+                <div class="student_price" id = "priceGymStudentX12">
+                    <h3>12Х на 1 меcяц</h3>
+                    <p>50р</p>
+                </div>
+                <div class="student_price" id = "priceGymStudentUnlim">
+                    <h3>Безлимит на 1 меcяц</h3>
+                    <p>70р</p>
+                </div>
+                </div>
+                <button id = "student" onclick="fun_student(this.id)">Посмотреть предложения</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; HARDEST. 2021</p>
+        <p id = "foot">Site created by <a href = "https://vk.com/id150749734">Kruglikov Vladislav</a></p>
+    </footer>
+
+</body>
+</html>

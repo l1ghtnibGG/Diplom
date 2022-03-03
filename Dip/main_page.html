@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARDEST</title>
+    <script src = "JS/main_page.js"></script>
+<link rel = "stylesheet" href="CSS/main_page.css">
+</head>
+<body>
+    <header id = "Header">
+    <nav>
+        <a href = "main_page.html" id = "one">HARDEST</a>
+        <button id = "menu" onclick="fun_menu(this.id)">...</button>
+            <ul id = "Menu">
+                <li><a href = "motivation.html" class = "flex-itm">Мотивация</a></li>
+                <li><a href = "abon.html" class = "flex-itm">Абонементы</a></li>
+                <li><a href = "trainers.html" class = "flex-itm">Тренера</a></li>
+                <li><a href = "aboutComp.html" class = "flex-itm">О компании</a></li>
+                <li><a href = "kontact.html" class = "flex-itm">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main>
+        <div class="slider">
+            <div id="img-container" class="images-container">
+            <img class = "slider-item fade" src="Images/main_1.jpg" alt="">
+            <div class="texts">
+                <h1>Лучшие тренеры</h1>
+                <h2>Только квалифицированные специалисты с многолетним стажем</h2>
+            </div>
+            <img class = "slider-item fade" src="Images/main_2.jpg" alt="">
+            <div class="texts">
+                <h1>Акции</h1>
+                <h2>При предъявлении студенческого билета скидка на все виды услуг зала тяжелой атлетики</h2>
+            </div>
+            <img class = "slider-item fade" src="Images/main_3.jpg" alt="">
+            <div class="texts">
+                <h1>Фитнес</h1>
+                <h2>Записывайтесь на групповые занятия. Аэробика, женская пластика, функциональные и силовые тренировки</h2>
+            </div>
+            <img class = "slider-item fade" src="Images/main_4.jpg" alt="">
+            <div class="texts">
+                <h1>Скидки</h1>
+                <h2>Действуют скидки при покупке безлимитного абонемента: на 3 месяца - 20%; на 6 месяцев - 30%; на 12 месяцев - 50%</h2>
+            </div>
+            </div>
+        <div class="buttons-block">
+            <div id="prev-btn">˂</div>
+            <div id="next-btn">˃</div>
+        </div>
+        <div id="dots-block">
+            <button class="dot dot-active"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; HARDEST. 2021</p>
+        <p id = "foot">Site created by <a href = "https://vk.com/id150749734">Kruglikov Vladislav</a></p>
+    </footer>
+    <script>
+        let dots = document.getElementsByClassName("dot"),
+    dotsArea = document.getElementById("dots-block"),
+    slides = document.getElementsByClassName("slider-item"),
+    prev = document.getElementById("prev-btn"),
+    next = document.getElementById("next-btn"),
+    text = document.getElementsByClassName("texts"),
+    slideIndex = 1;
+    
+    showSlides(slideIndex);
+    
+    window.onload = function Interval (n) {
+    setTimeout(function run() {
+        showSlides(slideIndex += 1);
+        setTimeout(run, 7000);
+        }, 7000);
+    }
+    
+    function showSlides (n) {
+    if (n < 1) {
+        slideIndex = slides.length;
+    } else if (n > slides.length) {
+        slideIndex = 1;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    for (let i = 0; i < text.length; i++) {
+        text[i].style.display = 'none';
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove('dot-active');
+    }
+    slides[slideIndex - 1].style.display = 'block';
+    dots[slideIndex - 1].classList.add('dot-active');
+    text[slideIndex - 1].style.display = 'block';
+    }
+    
+    function plusSlides (n) {
+    showSlides(slideIndex += n);
+    }
+    function currentSlide (n) {
+    showSlides(slideIndex = n)
+    }
+
+    
+    prev.onclick = function () {
+    plusSlides(-1);
+    }
+    next.onclick = function () {
+    plusSlides(1);
+    }
+    dotsArea.onclick = function (e) {
+    for (let i = 0; i < dots.length + 1; i++) {
+        if (e.target.classList.contains('dot') && e.target == dots[i - 1]) {
+            currentSlide(i);
+        }
+    }
+    }
+    </script>
+</body>
+</html>

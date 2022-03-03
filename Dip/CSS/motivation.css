@@ -1,0 +1,406 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    height: 100%;
+}
+
+header { 
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    flex-grow: 1;    
+    background: #282829;
+    height: 60pt;
+    justify-content: space-between;
+    transition: height 0.5s ease-in-out;
+}
+
+nav{
+    display: flex;
+    margin: 0;
+    position: relative;  
+    justify-content: space-between;
+    width: 100%;
+}       
+
+#one {
+    text-decoration: none;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 30px;
+    letter-spacing: 2pt;
+    padding-left: 3pt;
+    padding-right: 10pt;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0;
+    border-right: 1px solid black;
+    line-height: 60pt;
+    transition: all 0.5s ease-in-out;
+}
+
+#one:hover {
+    cursor: pointer;
+    color: #7a7c80;
+}      
+
+ul {
+    display: flex;
+    flex-grow: 1;
+    list-style: none;
+    box-sizing:border-box;
+    display: inline-flex;
+    justify-content: flex-end; 
+    align-items: center;    
+    padding-right: 50pt;
+    margin: 0;
+}
+
+li{
+    border-bottom: 0pt;
+    padding-bottom: 3pt;
+}
+
+li a{
+    display: block;
+    padding-left: 20pt;
+    text-decoration: none;
+    padding-right: 20pt;
+    font-size: 20pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;
+    font-weight: 700;
+    line-height: 60pt;
+    margin-bottom: -3pt;
+    transition: all 0.5s ease-in-out;
+}
+
+li a:hover {
+    cursor: pointer;
+}
+
+li:hover{
+    cursor: pointer;
+    padding-bottom: 0pt;
+    border-bottom: 3pt solid white;
+}
+
+#point{
+    cursor: pointer;
+    padding-bottom: 0pt;
+    line-height: 57pt;
+    border-bottom: 3pt solid white;
+}
+ 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.bg_main {
+    background-size: cover;
+    position: static;
+    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../Images/bg_abon.jpg");
+    height: 150pt;
+    width: 100%;
+    margin: 0;
+    letter-spacing: 1pt;
+}
+
+
+main h1 {
+    position: static;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;
+    font-size: 35pt;
+    font-weight: 700;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    line-height: 150pt;
+}
+
+#menu{
+    display: none;
+    border: none;
+    align-items:center;
+    padding-bottom: 15pt;
+    background:#282829;
+    color: white;
+    margin: 0;
+    font-size: 30pt;
+    letter-spacing: 1pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;  
+}
+
+#menu:hover{
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 85%;
+    margin-top: 30pt;
+    margin-bottom: 30pt;
+}
+
+.quote{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+
+.txt{
+    height: 100%;
+    width: 550px;
+    padding-right: 2pt;
+    padding-left: 8pt;
+}
+
+.txt h3{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 15pt;
+    font-weight: 100;
+    padding-bottom: 3pt;
+    letter-spacing: 1pt;
+}
+
+.txt h2{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+    letter-spacing: 1pt;
+}
+
+.row img{
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+}
+
+#adapt1, #adapt2, #adapt3{
+    display: none;
+}
+
+#big1, #big2, #big3{
+    display: flex;
+}
+
+footer {  
+    display: flex;
+    width: 100%;
+    flex: 0 0 auto;
+    background: #282829;
+    color: white;
+    justify-content: space-between;
+    height: 40pt;
+}
+
+footer p {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;
+    font-weight: 300;
+    align-self: center; 
+    padding-right: 10pt;
+    padding-left: 10pt;
+}
+
+footer a {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;
+    font-weight: 300; 
+    padding-right: 10pt;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: #7a7c80;
+}
+
+@media all and (max-width: 1300px) {
+    li a{
+    padding-left: 10pt;
+    padding-right: 10pt;
+    font-size: 15pt;
+    font-weight: 600;
+    line-height: 40pt;
+    margin-bottom: -3pt;
+    }
+
+    header{
+        height: 40pt;
+    }
+
+    #point {
+        line-height: 37pt;
+    }
+
+    #one {
+        line-height: 40pt;
+        font-size: 15pt;
+    }
+
+    .row img{
+        width: 450px;
+    }
+
+    .txt{
+        width: 450px;
+    }
+}
+
+@media all and (max-width: 1070px){ 
+    .row img{
+        width: 400px;
+    }
+
+    .txt{
+        width: 400px;
+    }
+
+    .txt h3{
+        font-size: 12pt;
+    }
+    
+    .txt h2{
+        font-size: 15pt;
+    }
+}
+
+ @media all and (max-width: 945px){   
+    header{
+        height: 30pt;
+    }
+
+    #point {
+        line-height: 27pt;
+    }
+
+    #one {
+        line-height: 30pt;
+        font-size: 15pt;
+    } 
+   nav {
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+   }
+
+   nav>*{
+       flex: 1 1 200px;
+   }
+
+   ul{
+       display: none;
+       flex-direction: column;
+       background:#282829;
+       padding: 0;
+   }
+
+   .bg_main{
+    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../Images/bg_abon_small.jpg");
+    width: 100%;
+    height: 170pt;
+    object-fit: contain;
+    }
+
+   #one{
+       display: flex;
+       border: none;
+       flex-basis: 60%;
+   }
+
+   #menu{
+    display: flex;
+    justify-content: flex-end;
+    height: 30pt;
+   }
+
+   #Menu{
+       display: none;
+   }
+
+   .row{
+       width: 100%;
+   }
+}
+
+@media all and (max-width: 800px){
+    .quote{
+        flex-direction: column;
+    }
+
+    .row img{
+        width: 550px;
+    }
+    
+    #adapt1, #adapt2, #adapt3{
+        display: flex;
+    }
+
+    #big1, #big2, #big3{
+        display: none;
+    }
+
+    .txt{
+        padding: 0;
+        text-align: center;
+        width: 550px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    nav>*{
+        flex: 1 1 100px;
+    }
+
+    main h1{
+        font-size: 30pt;
+    }
+
+    .row img{
+        width: 450px;
+    }
+
+    .txt{
+        width: 450px;
+    }
+}
+
+@media all and (max-width: 450px) {
+
+    footer p {
+        text-align: left;
+        font-size: 11pt;
+        padding-left: 0;
+    }
+
+    #foot{
+        text-align: right;
+        padding-right: 3pt;
+    }
+
+    .row img{
+        width: 320px;
+    }
+    
+    .txt{
+        width: 320px;
+    }
+}

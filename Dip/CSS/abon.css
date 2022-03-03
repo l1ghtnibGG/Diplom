@@ -1,0 +1,740 @@
+body{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    height: 100%;
+}
+
+.row button {
+    width: 100%;
+    height: 45pt;
+    border: none;
+    background:#282829;
+    color: white;
+    font-size: 15pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+#fit:hover {
+    cursor: pointer;
+    color:#ebe42f;
+}
+
+#gym:hover {
+    cursor: pointer;
+    color:#31d361;
+}
+
+#speshal:hover {
+    cursor: pointer;
+    color:#2dcacf;
+}
+
+#student:hover {
+    cursor: pointer;
+    color:#d82727;
+}
+
+header { 
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    flex-grow: 1;    
+    background: #282829;
+    height: 60pt;
+    justify-content: space-between;
+    transition: height 0.5s ease-in-out;
+}
+
+nav{
+    display: flex;
+    margin: 0;
+    position: relative;  
+    justify-content: space-between;
+    width: 100%;
+}       
+
+#one {
+    text-decoration: none;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 30px;
+    letter-spacing: 2pt;
+    padding-left: 3pt;
+    padding-right: 10pt;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0;
+    border-right: 1px solid black;
+    line-height: 60pt;
+    transition: all 0.5s ease-in-out;
+}
+
+#one:hover {
+    cursor: pointer;
+    color: #7a7c80;
+}      
+
+ul {
+    display: flex;
+    flex-grow: 1;
+    list-style: none;
+    box-sizing:border-box;
+    display: inline-flex;
+    justify-content: flex-end; 
+    align-items: center;    
+    padding-right: 50pt;
+    margin: 0;
+}
+
+li{
+    border-bottom: 0pt;
+    padding-bottom: 3pt;
+}
+
+li a{
+    display: block;
+    padding-left: 20pt;
+    text-decoration: none;
+    padding-right: 20pt;
+    font-size: 20pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;
+    font-weight: 700;
+    line-height: 60pt;
+    margin-bottom: -3pt;
+    transition: all 0.5s ease-in-out;
+}
+
+li a:hover {
+    cursor: pointer;
+}
+
+li:hover{
+    cursor: pointer;
+    padding-bottom: 0pt;
+    border-bottom: 3pt solid white;
+}
+
+#point{
+    cursor: pointer;
+    padding-bottom: 0pt;
+    line-height: 57pt;
+    border-bottom: 3pt solid white;
+}
+ 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.bg_main {
+    background-size: cover;
+    position: static;
+    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../Images/bg_abon.jpg");
+    height: 150pt;
+    width: 100%;
+    margin: 0;
+    letter-spacing: 1pt;
+}
+
+
+main h1 {
+    position: static;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;
+    font-size: 35pt;
+    font-weight: 700;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    line-height: 150pt;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    margin-top: 30pt;
+    margin-bottom: 30pt;
+    background:#282829;
+}
+
+.fitness {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ebe42f;
+    height: 400pt;
+    width: 100%;
+}
+
+.fitness_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#282829;
+    color: white;
+    font-size: 15pt;
+    height: 200pt;
+    width: 33.33333%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 8pt;
+    padding-right: 8pt;
+}
+
+
+.hide_fit{
+    display: none;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#priceX4{
+    border-left:none;
+}
+
+#priceX8{
+    border-left:none;
+}
+
+#priceX12{
+    border-top:none;
+}
+
+#priceUnlim {
+    border-top:none;
+    border-left:none;
+}
+
+.fitness_price h3 {
+    font-size: 18pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;  
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100; 
+    background-color: #ebe42f;
+    padding: 0 3pt;
+    
+}
+
+.fitness_price p {
+    font-size: 15pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;  
+    text-transform: uppercase;
+    font-weight: 100; 
+}
+
+
+
+.gym {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #31d361;
+    height: 400pt;
+    width: 100%;
+}
+
+.gym_price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#282829;
+    color: white;
+    font-size: 15pt;
+    height: 200pt;
+    width: 33.33333%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 8pt;
+    padding-right: 8pt;
+}
+
+
+.hide_gym{
+    display: none;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#priceGymX4{
+    border-left:none;
+}
+
+#priceGymX8{
+    border-left:none;
+}
+
+#priceGymX12{
+    border-top:none;
+}
+
+#priceGymUnlim {
+    border-top: none;
+    border-left: none;
+}
+
+
+.gym_price h3 {
+    font-size: 18pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;  
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100; 
+    background-color: #31d361;
+    padding: 0 3pt;
+    
+}
+
+.gym_price p {
+    font-size: 15pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;  
+    text-transform: uppercase;
+    font-weight: 100; 
+}
+
+.gym_button {
+    display: flex;
+    position: relative;
+    top: 120pt;
+    width: 100%;
+    height: 60pt;
+    align-items: center;
+    justify-content: center;
+    background:#282829;
+}
+
+.speshal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2dcacf;
+    height: 400pt;
+    width: 100%;
+}
+
+.speshal_price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#282829;
+    color: white;
+    font-size: 15pt;
+    height: 200pt;
+    width: 33.33333%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 8pt;
+    padding-right: 8pt;
+}
+
+
+.hide_speshal{
+    display: none;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#priceSpeshalX6month{
+    border-right:none;
+    border-left: none;
+}
+
+.speshal_price h3 {
+    font-size: 18pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;  
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100; 
+    background-color: #2dcacf;
+    padding: 0 3pt;
+    
+}
+
+.speshal_price p {
+    font-size: 15pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;  
+    text-transform: uppercase;
+    font-weight: 100; 
+}
+
+.speshal_button {
+    display: flex;
+    position: relative;
+    top: 120pt;
+    width: 100%;
+    height: 60pt;
+    align-items: center;
+    justify-content: center;
+    background:#282829;
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #d82727;
+    height: 400pt;
+    width: 100%;
+}
+
+.student_price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#282829;
+    color: white;
+    font-size: 15pt;
+    height: 200pt;
+    width: 33.33333%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 8pt;
+    padding-right: 8pt;
+}
+
+.hide_student{
+    display: none;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#priceGymStudentX8{
+    border-left:none;
+    border-right:none;
+}
+
+#priceGymStudentUnlim{
+    border-top:none;
+}
+
+.student_price h3 {
+    font-size: 18pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;  
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100; 
+    background-color:#d82727;
+    padding: 0 3pt;
+    
+}
+
+.student_price p {
+    font-size: 15pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;  
+    text-transform: uppercase;
+    font-weight: 100; 
+}
+
+.student_button {
+    display: flex;
+    position: relative;
+    top: 120pt;
+    width: 100%;
+    height: 60pt;
+    align-items: center;
+    justify-content: center;
+    background:#282829;
+}
+
+
+main h2 {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 23pt;
+    font-weight: 700;
+    margin-bottom: 5pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+.fitness hr {
+    width: 100%;
+    height: 0;
+    border: none;
+    border-top: 1px solid #b3b059;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+.gym hr {
+    width: 100%;
+    height: 0;
+    border: none;
+    border-top: 1px solid #1b9c2c;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+.speshal hr {
+    width: 100%;
+    height: 0;
+    border: none;
+    border-top: 1px solid #23acb1;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+.student hr {
+    width: 100%;
+    height: 0;
+    border: none;
+    border-top: 1px solid #b41f1f;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+main p {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 13pt;
+    font-weight: 100;
+    margin-top: 0;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    text-align: center;
+}
+
+#menu{
+    display: none;
+    border: none;
+    align-items:center;
+    padding-bottom: 15pt;
+    background:#282829;
+    color: white;
+    margin: 0;
+    font-size: 30pt;
+    letter-spacing: 1pt;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;  
+}
+
+#menu:hover{
+    cursor: pointer;
+}
+
+footer {  
+    display: flex;
+    width: 100%;
+    flex: 0 0 auto; 
+    background: #282829;
+    color: white;
+    justify-content: space-between;
+    height: 40pt;
+}
+
+footer p {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;
+    font-weight: 300;
+    align-self: center; 
+    padding-right: 10pt;
+    padding-left: 10pt;
+}
+
+footer a {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;
+    font-weight: 300; 
+    padding-right: 10pt;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: #7a7c80;
+}
+
+@media all and (max-width: 1300px) {
+    li a{
+    padding-left: 10pt;
+    padding-right: 10pt;
+    font-size: 15pt;
+    font-weight: 600;
+    line-height: 40pt;
+    margin-bottom: -3pt;
+    }
+
+    header{
+        height: 40pt;
+    }
+
+    #point {
+        line-height: 37pt;
+    }
+
+    #one {
+        line-height: 40pt;
+        font-size: 15pt;
+    }
+}
+
+@media all and (max-width: 1024px){
+     .fitness_price, .gym_price, .speshal_price, .student_price{
+         width: 50%;
+     }
+
+     #priceX8, #priceGymX8, #priceSpeshalX12month, #priceGymStudentX12{
+        border-top:none;
+    }
+    
+    #priceX12, #priceGymX12, #priceGymStudentUnlim{
+        border-left:none;
+    }
+
+    .row{
+        width: 70%;
+    }
+ }
+
+ @media all and (max-width: 930px){   
+    header{
+        height: 30pt;
+    }
+
+    #point {
+        line-height: 27pt;
+    }
+
+    #one {
+        line-height: 30pt;
+        font-size: 15pt;
+    } 
+   nav {
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+   }
+
+   nav>*{
+       flex: 1 1 200px;
+   }
+
+   ul{
+       display: none;
+       flex-direction: column !important;
+       background:#282829;
+       padding: 0;
+   }
+
+   .fitness, .gym, .speshal, .student{
+       height: 300pt;
+   }
+
+   .row{
+       width: 70%;
+   }
+
+   .bg_main{
+    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../Images/bg_abon_small.jpg");
+    width: 100%;
+    height: 170pt;
+    object-fit: contain;
+    }
+
+   #one{
+       display: flex;
+       border: none;
+       flex-basis: 60%;
+   }
+
+   #menu{
+    display: flex;
+    justify-content: flex-end;
+    height: 30pt;
+   }
+
+   #Menu{
+       display: none;
+   }
+}
+
+@media all and (max-width: 550px) {
+    .fitness_price, .gym_price, .speshal_price, .student_price{
+        width: 50%;
+    }
+
+    .fitness, .gym, .speshal, .student{
+        height: 250pt;
+    }
+
+    .row{
+        width: 85%;
+    }
+
+    main h2 {
+        font-size: 18pt;
+    }
+
+    main p {
+        font-size: 11pt;
+    }
+
+    .fitness_price h3, .gym_price h3, .speshal_price h3, .student_price h3{
+        font-size: 15pt;
+    }
+
+    .fitness_price p, .gym_price p, .speshal_price p, .student_price p{
+        font-size: 13pt;
+    }
+
+    .row button{
+        font-size: 14pt;
+    }
+
+    nav>*{
+        flex: 1 1 100px;
+    }
+
+    main h1{
+        font-size: 30pt;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .row{
+        width: 100%;
+    }
+
+    #priceX1, #priceGymX1, #priceSpeshalX3month, #priceSpeshalX12month, #priceGymStudentX4, #priceGymStudentX12 {
+        border-left: none;
+    }
+
+    #priceX4, #priceX12, #priceGymX4, #priceGymX12, #priceGymStudentUnlim {
+        border-right: none;
+    }
+
+    footer p {
+        text-align: left;
+        font-size: 11pt;
+        padding-left: 0;
+    }
+
+    #foot{
+        text-align: right;
+        padding-right: 3pt;
+    }
+}
